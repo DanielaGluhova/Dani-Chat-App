@@ -1,0 +1,8 @@
+-- Потребители
+CREATE TABLE users(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(256) NOT NULL,
+    email VARCHAR(256) NOT NULL UNIQUE,
+    role VARCHAR(256) NOT NULL CHECK (role IN ('USER', 'ADMIN', 'OWNER')),
+    is_deleted BOOLEAN DEFAULT FALSE
+);

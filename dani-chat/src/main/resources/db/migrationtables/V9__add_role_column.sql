@@ -1,0 +1,1 @@
+ALTER TABLE channel_users ADD role VARCHAR(256) NOT NULL CHECK (role IN ('USER', 'ADMIN', 'OWNER'));

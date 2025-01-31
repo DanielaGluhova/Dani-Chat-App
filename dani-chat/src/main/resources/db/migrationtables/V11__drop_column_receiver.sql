@@ -1,0 +1,1 @@
+ALTER TABLE messages DROP COLUMN receiver_id;
